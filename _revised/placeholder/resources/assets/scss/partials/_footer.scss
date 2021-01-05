@@ -1,0 +1,13 @@
+/* FOOTER styles
+==================================================================================================== */
+footer {
+	background: #DDD;
+	color: #999;
+	padding: 1em 2em;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: $oswald;
+	@include mq-at-least(768px){
+		text-align: right;
+	}
+}

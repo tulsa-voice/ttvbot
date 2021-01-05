@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+// GLOBAL imports
+// ---------------------------------------------------------------------------
+
+@import "partials/modules/variables";
+@import "partials/mixins/all";
+
+// PRIMARY imports
+// ---------------------------------------------------------------------------
+
+// Stylesheet: Reset
+@import "partials/modules/normalize";
+
+// Utilities: List of helper classes (eg clearfix, alignment, etc)
+@import "partials/modules/utilities";
+
+// Typography: Headings, text element, lists, code, and more
+@import "partials/modules/typography";
+
+//Main: Global and main styles
+@import "partials/base";
+
+
+// MEDIA-QUERIES imports
+// ---------------------------------------------------------------------------
+
+// Grid: Responsive layout;
+@import "partials/third-party/grid";
+
+// SITE-SPECIFIC imports
+// ---------------------------------------------------------------------------
+
+// Forms: Input, Textarea, Button
+// @import "partials/modules/forms";
+
+//Plugins: active plugins (eg slider, tooltip, lightbox)
+@import "partials/plugins";
+
+
+// SITE STRUCTURE
+// ---------------------------------------------------------------------------
+@import "partials/header";
+@import "partials/page";
+@import "partials/list";
+@import "partials/interview";
+@import "partials/index";
+@import "partials/footer";
+
+//IE Only: Conditional IE class
+@import "partials/ie";
+
+//Print: default print
+@import "partials/modules/print";
+
+@import "partials/page.scss";

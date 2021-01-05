@@ -1,0 +1,48 @@
+.c-editor-picks {
+    h2 {
+        @include fluid-type(font-size, 600px, 1280px, 32px, 64px);
+        @include fluid-type(margin-top, 600px, 1280px, 32px, 72px);
+        @include fluid-type(bottom, 600px, 1280px, 24px, 48px);
+        font-family: $aachen;
+        padding: 0;
+        line-height: 1em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+	ul {
+		list-style: none;
+		margin: 0 0 1em;
+		padding: 0;
+		@include mq-at-least(600px) {
+            columns: 2 auto;
+		}
+		@include mq-at-least(960px) {
+			columns: 3 auto;
+		}
+		@include mq-at-least(1280px) {
+			columns: 4 auto;
+		}
+	}
+
+	li {
+		display: inline-block;
+		padding: 0 1em;
+		margin: 0 0 1.5em;
+        line-height: 1.2em;
+        font-family: $oswald;
+		@include mq-at-least(960px) {
+            max-width: 300px;
+		}
+	}
+
+	strong {
+        @include fluid-type(font-size, 600px, 1280px, 18px, 20px);
+        line-height: 1.1em;
+		// display: block;
+		font-family: $aachen;
+		text-transform: uppercase;
+        display: block;
+        margin: 0;
+        padding: 0;
+	}
+}

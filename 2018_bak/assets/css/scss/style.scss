@@ -1,0 +1,40 @@
+// sass --watch scss/style.scss:style.css
+/*
+    ===========================
+    Libs
+    ===========================
+*/
+@import "libs/normalize";
+/*
+    ===========================
+    Settings/Config/Mixins
+    ===========================
+*/
+@import "partials/config";
+@import "partials/settings";
+@import "partials/utils";
+@import "partials/mixins";
+@import "partials/fonts";
+
+/*
+    ===========================
+    Main CSS
+    ===========================
+*/
+
+@import "partials/main";
+@import "partials/header";
+// @import "partials/footer";
+@import "partials/hero";
+@import "partials/winners";
+// @import "partials/header";
+// @import "partials/forms";
+@import "partials/editor-picks";
+@import "partials/footer";
+// @import "partials/webkit";
+
+/*
+    ===========================
+    CDN Imports
+    ===========================
+*/

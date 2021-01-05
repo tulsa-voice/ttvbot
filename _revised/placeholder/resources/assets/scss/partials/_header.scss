@@ -1,0 +1,79 @@
+/* HEADER styles
+==================================================================================================== */
+header {
+	position: fixed;
+	top: 1em;
+	z-index: 10;
+	width: 100%;
+	nav {
+		ul {
+			@include reset-list;
+			@extend .clearfix;
+			width: 100%;
+			display: table;
+			text-align: center;
+			li {
+				&.active {
+					a {
+						background-color: $white;
+						color: $pink;
+					}
+				}
+				display: table-cell;
+				width: 40px;
+				padding-right: 1em;
+				/*padding-right: 40px;*/
+
+				&:last-child {
+					/*padding-right: 10px;*/
+					/*a {
+						margin-right: 0;
+					}*/
+				}
+				a {
+					transition: all 0.3s ease-out;
+					&:hover {
+						background-color: $white;
+						color: $pink;
+					}
+					background: $yellow;
+					text-decoration: none;
+					display: block;
+					height: 40px;
+					line-height: 40px;
+					text-align: center;
+					/*margin-right: 10px;*/
+					color: $black;
+					font-size: 1.3em;
+					span {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	@include mq-at-least(768px){
+		width: auto;
+		border-bottom: 0;
+		top: 2em;
+		left: 2em;
+		nav {
+			ul {
+				display: block;
+				li {
+					display: block;
+					float: none;
+					width: 50px;
+					max-width: 200px;
+					margin: 0 0 10px;
+					a {
+						border-right: none;
+						height: 50px;
+						line-height: 50px;
+						font-size: 1.3em;
+					}
+				}
+			}
+		}
+	}
+}

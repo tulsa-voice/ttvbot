@@ -1,0 +1,1055 @@
+/*
+    ===========================
+    Libs
+    ===========================
+*/
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+/*
+    ===========================
+    Settings/Config/Mixins
+    ===========================
+*/
+@font-face {
+  font-family: 'Aachen';
+  src: url("fonts/unicode.aachenb.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/unicode.aachenb.eot?#iefix") format("embedded-opentype"), url("fonts/unicode.aachenb.woff") format("woff"), url("fonts/unicode.aachenb.ttf") format("truetype"), url("fonts/unicode.aachenb.svg#dc6d2e017544373ab9e29b35c91a1d3a") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700; }
+/*
+    ===========================
+    Main CSS
+    ===========================
+*/
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px; }
+
+.wrapper {
+  max-width: 1280px;
+  padding: 0 2em;
+  margin: 0 auto;
+  display: block; }
+
+a {
+  transition: color 0.2s ease-out; }
+
+h1 {
+  font-family: "Oswald", "Franklin Gothic Medium", Arial, sans-serif; }
+
+h2 {
+  font-family: "Aachen", "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif; }
+
+.u-bg-pink {
+  background: #F6C2C8; }
+
+.u-bg-blush {
+  background: #E55B8A; }
+
+.u-bg-orange {
+  background: #F1684C; }
+
+.u-bg-black {
+  background: #000; }
+
+.u-text-white {
+  color: #fff; }
+
+.u-text-orange {
+  color: #F1684C; }
+
+.u-d-block {
+  display: block; }
+
+.u-oswald {
+  font-family: "Oswald", "Franklin Gothic Medium", Arial, sans-serif; }
+
+.u-align-center {
+  text-align: center; }
+
+.c-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  background: #000;
+  height: 50px;
+  left: 0;
+  box-shadow: 0 0 5px #000; }
+
+.c-nav-primary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  .c-nav-primary > li {
+    display: flex; }
+    @media screen and (min-width: 600px) {
+      .c-nav-primary > li {
+        position: relative;
+        display: block; } }
+    .c-nav-primary > li:hover > a, .c-nav-primary > li.active > a {
+      color: #F1684C; }
+      .c-nav-primary > li:hover > a:after, .c-nav-primary > li.active > a:after {
+        top: 0; }
+    .c-nav-primary > li:hover .c-nav-secondary, .c-nav-primary > li.active .c-nav-secondary {
+      display: flex; }
+      @media screen and (min-width: 600px) {
+        .c-nav-primary > li:hover .c-nav-secondary, .c-nav-primary > li.active .c-nav-secondary {
+          display: block; } }
+  .c-nav-primary a {
+    padding: 1em;
+    display: block;
+    font-size: 1em;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Oswald", "Franklin Gothic Medium", Arial, sans-serif;
+    text-transform: uppercase;
+    transition: color 0.2s ease-out, background 0.2s ease-out;
+    position: relative;
+    overflow: hidden; }
+    .c-nav-primary a span {
+      display: none;
+      margin-left: 0.5em; }
+      @media screen and (min-width: 1024px) {
+        .c-nav-primary a span {
+          display: inline-block; } }
+    .c-nav-primary a:after {
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      display: block;
+      content: " ";
+      background: #F1684C;
+      z-index: 30;
+      top: -5px;
+      left: 0;
+      transition: top 0.2s ease-out; }
+    .c-nav-primary a:hover {
+      top: 0;
+      color: #F1684C; }
+
+.c-nav-secondary {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: #F1684C;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0 1em;
+  align-items: center;
+  z-index: 21;
+  justify-content: center; }
+  .c-nav-secondary > li {
+    display: inline-block; }
+    .c-nav-secondary > li a {
+      border-top: none;
+      color: #000;
+      width: auto;
+      transition: color 0.2s ease-out; }
+      .c-nav-secondary > li a:hover {
+        border-top: none;
+        color: #fff; }
+  @media screen and (min-width: 600px) {
+    .c-nav-secondary {
+      width: 140px;
+      text-align: left;
+      padding: 0; }
+      .c-nav-secondary > li {
+        display: block; } }
+
+.c-hero {
+  margin-top: 50px;
+  background: url("../media/bg-hero-s.jpg") center center no-repeat fixed;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media screen and (min-width: 768px) {
+    .c-hero {
+      background-image: url("../media/bg-hero-m.jpg"); } }
+  @media screen and (min-width: 1440px) {
+    .c-hero {
+      background-image: url("../media/bg-hero-l.jpg"); } }
+
+.c-hero__box {
+  background: url("../img/box.svg") center center no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2; }
+  .c-hero__box {
+    width: 350px;
+    height: 350px; }
+    @media screen and (min-width: 400px) {
+      .c-hero__box {
+        width: calc(350px + 350 * (100vw - 400px) / 400);
+        height: calc(350px + 350 * (100vw - 400px) / 400); } }
+    @media screen and (min-width: 800px) {
+      .c-hero__box {
+        width: 700px;
+        height: 700px; } }
+  .c-hero__box h1 {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase; }
+    .c-hero__box h1 {
+      font-size: 48px; }
+      @media screen and (min-width: 400px) {
+        .c-hero__box h1 {
+          font-size: calc(48px + 48 * (100vw - 400px) / 800); } }
+      @media screen and (min-width: 1200px) {
+        .c-hero__box h1 {
+          font-size: 96px; } }
+    .c-hero__box h1 {
+      margin-left: -20px; }
+      @media screen and (min-width: 400px) {
+        .c-hero__box h1 {
+          margin-left: calc(-20px + -30 * (100vw - 400px) / 800); } }
+      @media screen and (min-width: 1200px) {
+        .c-hero__box h1 {
+          margin-left: -50px; } }
+
+.c-intro {
+  background: #000;
+  color: #fff;
+  padding: 3em 0; }
+  .c-intro h2 {
+    color: #F1684C;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Oswald", "Franklin Gothic Medium", Arial, sans-serif;
+    line-height: 1em;
+    margin: 0 0 32px;
+    padding: 0; }
+    .c-intro h2 {
+      font-size: 42px; }
+      @media screen and (min-width: 600px) {
+        .c-intro h2 {
+          font-size: calc(42px + 38 * (100vw - 600px) / 680); } }
+      @media screen and (min-width: 1280px) {
+        .c-intro h2 {
+          font-size: 80px; } }
+  .c-intro hr {
+    margin: 0 0 48px;
+    padding: 0;
+    height: 5px;
+    background: #fff;
+    border: none; }
+  .c-intro h3 {
+    font-family: "Aachen", "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    text-align: center;
+    text-transform: uppercase; }
+    .c-intro h3 {
+      font-size: 32px; }
+      @media screen and (min-width: 600px) {
+        .c-intro h3 {
+          font-size: calc(32px + 32 * (100vw - 600px) / 680); } }
+      @media screen and (min-width: 1280px) {
+        .c-intro h3 {
+          font-size: 64px; } }
+  .c-intro p {
+    font-family: "Oswald", "Franklin Gothic Medium", Arial, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 0 2em;
+    text-transform: uppercase; }
+    @media screen and (min-width: 768px) {
+      .c-intro p {
+        padding-top: 1em; } }
+    .c-intro p a {
+      color: #F1684C;
+      text-decoration: none; }
+      .c-intro p a:hover {
+        color: #E55B8A; }
+
+.c-sponsor-title {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  z-index: 5;
+  padding: 1em 1em 0.25em;
+  margin-bottom: 16px;
+  transition: all 0.2s ease-out; }
+  .c-sponsor-title:hover {
+    background: #E55B8A; }
+  .c-sponsor-title img {
+    display: inline-block;
+    height: 25px;
+    width: auto;
+    margin: 0 0.25em 8px; }
+    @media screen and (min-width: 768px) {
+      .c-sponsor-title img {
+        height: 35px; } }
+
+.c-grid {
+  padding: 2em 0; }
+  @media screen and (min-width: 768px) {
+    .c-grid {
+      padding: 3em 0; } }
+
+@media screen and (min-width: 768px) {
+  .c-grid--three .c-grid-card {
+    width: 235px; } }
+  @media screen and (min-width: 768px) and (min-width: 768px) {
+    .c-grid--three .c-grid-card {
+      width: calc(235px + 177 * (100vw - 768px) / 512); } }
+  @media screen and (min-width: 768px) and (min-width: 1280px) {
+    .c-grid--three .c-grid-card {
+      width: 412px; } }
+
+.c-grid--three .c-grid-card h2 span {
+  color: #fff; }
+
+.u-bg-pink .c-grid--three .c-grid-card h2 span {
+  color: #E55B8A; }
+
+@media screen and (min-width: 768px) {
+  .c-grid--four .c-grid-card {
+    width: 304px; } }
+@media screen and (min-width: 768px) {
+  .c-grid--four.c-grid__container {
+    flex-wrap: wrap; } }
+@media screen and (min-width: 1280px) {
+  .c-grid--four.c-grid__container {
+    flex-wrap: nowrap; } }
+
+.c-grid__container.c-grid--two ~ .c-grid__container.c-grid--two {
+  border-top: 10px solid #F6C2C8; }
+  @media screen and (min-width: 768px) {
+    .c-grid__container.c-grid--two ~ .c-grid__container.c-grid--two {
+      border: none; } }
+
+@media screen and (min-width: 768px) {
+  .c-grid--two .c-grid-card {
+    width: 304px; } }
+  @media screen and (min-width: 768px) and (min-width: 768px) {
+    .c-grid--two .c-grid-card {
+      width: calc(304px + 236 * (100vw - 768px) / 512); } }
+  @media screen and (min-width: 768px) and (min-width: 1280px) {
+    .c-grid--two .c-grid-card {
+      width: 540px; } }
+
+.c-grid--two .c-grid__item {
+  border-bottom: 10px solid #F6C2C8; }
+  .c-grid--two .c-grid__item:nth-child(3) {
+    border: none; }
+  @media screen and (min-width: 768px) {
+    .c-grid--two .c-grid__item {
+      border: none; } }
+.c-grid--two .c-grid__v-spacer {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .c-grid--two .c-grid__v-spacer {
+      width: 10px;
+      margin: 0 20px;
+      display: block;
+      background: #F6C2C8; } }
+.c-grid--two .c-grid__h-spacer {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .c-grid--two .c-grid__h-spacer {
+      height: 10px;
+      display: block;
+      background: #F6C2C8;
+      margin: 0 20px; } }
+
+@media screen and (min-width: 768px) {
+  .c-grid__container {
+    display: flex;
+    justify-content: center; } }
+
+.c-grid-card {
+  text-align: center;
+  padding: 2em 0; }
+  @media screen and (min-width: 768px) {
+    .c-grid-card {
+      padding: 2em 1em; } }
+  .c-grid-card img {
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    max-width: 100%; }
+    .c-grid-card img {
+      margin-bottom: 24px; }
+      @media screen and (min-width: 400px) {
+        .c-grid-card img {
+          margin-bottom: calc(24px + 8 * (100vw - 400px) / 800); } }
+      @media screen and (min-width: 1200px) {
+        .c-grid-card img {
+          margin-bottom: 32px; } }
+  .c-grid-card h2 {
+    margin: 0 0 16px;
+    padding: 0;
+    line-height: 1em;
+    text-transform: uppercase; }
+    .c-grid-card h2 {
+      font-size: 26px; }
+      @media screen and (min-width: 400px) {
+        .c-grid-card h2 {
+          font-size: calc(26px + 18 * (100vw - 400px) / 800); } }
+      @media screen and (min-width: 1200px) {
+        .c-grid-card h2 {
+          font-size: 44px; } }
+    .c-grid-card h2 span {
+      padding: 0.5em 0;
+      display: block;
+      font-family: "Oswald", "Franklin Gothic Medium", Arial, sans-serif;
+      text-transform: uppercase;
+      line-height: 1em;
+      font-weight: 600; }
+      .c-grid-card h2 span {
+        font-size: 24px; }
+        @media screen and (min-width: 400px) {
+          .c-grid-card h2 span {
+            font-size: calc(24px + 8 * (100vw - 400px) / 800); } }
+        @media screen and (min-width: 1200px) {
+          .c-grid-card h2 span {
+            font-size: 32px; } }
+  .c-grid-card p:last-of-type {
+    margin-bottom: 1em; }
+  .c-grid-card .c-grid-card__finalists {
+    font-family: "Oswald", "Franklin Gothic Medium", Arial, sans-serif;
+    font-weight: 600;
+    margin: 0 0 1em;
+    padding: 0; }
+  .c-grid-card .c-grid-card__write-up {
+    font-family: "Oswald", "Franklin Gothic Medium", Arial, sans-serif;
+    margin: 0 0 1em;
+    font-weight: 300;
+    text-align: left;
+    line-height: 1.5em; }
+    .c-grid-card .c-grid-card__write-up a {
+      color: #F1684C;
+      text-decoration: none; }
+      .c-grid-card .c-grid-card__write-up a:hover {
+        color: #E55B8A; }
+
+@media screen and (min-width: 768px) {
+  .c-special__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 1em auto 2em; } }
+.c-special__content img {
+  display: block;
+  margin: 0 auto 2em;
+  max-width: 100%;
+  border-radius: 100%;
+  width: 400px; }
+  @media screen and (min-width: 768px) {
+    .c-special__content img {
+      display: inline-block;
+      margin: 0 2em 0 0; } }
+.c-special__content h3 {
+  text-align: center;
+  margin: 0 0 16px;
+  padding: 0;
+  display: block;
+  color: #F1684C;
+  font-family: "Aachen", "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+  text-transform: uppercase;
+  line-height: 1em;
+  font-weight: 600; }
+  .c-special__content h3 {
+    font-size: 36px; }
+    @media screen and (min-width: 400px) {
+      .c-special__content h3 {
+        font-size: calc(36px + 20 * (100vw - 400px) / 800); } }
+    @media screen and (min-width: 1200px) {
+      .c-special__content h3 {
+        font-size: 56px; } }
+  @media screen and (min-width: 768px) {
+    .c-special__content h3 {
+      text-align: left;
+      display: inline-block;
+      border-bottom: 10px solid #000; } }
+
+.c-special__write-up {
+  font-family: "Oswald", "Franklin Gothic Medium", Arial, sans-serif;
+  margin: 2em auto 1em;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1.5em;
+  max-width: 800px;
+  display: block; }
+  .c-special__write-up a {
+    text-decoration: none;
+    color: #F1684C; }
+    .c-special__write-up a:hover {
+      color: #E55B8A; }
+
+.c-special--mcnellies .c-special__content h3, .c-special--bynum .c-special__content h3 {
+  color: black;
+  border-color: #F6C2C8; }
+.c-special--mcnellies .c-special__write-up, .c-special--bynum .c-special__write-up {
+  color: #fff; }
+  .c-special--mcnellies .c-special__write-up a, .c-special--bynum .c-special__write-up a {
+    color: #F6C2C8; }
+    .c-special--mcnellies .c-special__write-up a:hover, .c-special--bynum .c-special__write-up a:hover {
+      color: #000; }
+
+.c-special--cains .c-special__content h3 {
+  color: #fff;
+  border-color: #F6C2C8; }
+.c-special--cains .c-special__write-up a {
+  color: #fff; }
+  .c-special--cains .c-special__write-up a:hover {
+    color: #000; }
+
+.c-special--kilkennys .c-special__content h3 {
+  border-color: #fff; }
+
+@media screen and (min-width: 768px) {
+  .c-special--bynum .c-grid__container.c-grid--three .c-grid__item:first-child .c-grid-card {
+    width: 400px; } }
+  @media screen and (min-width: 768px) and (min-width: 768px) {
+    .c-special--bynum .c-grid__container.c-grid--three .c-grid__item:first-child .c-grid-card {
+      width: calc(400px + 200 * (100vw - 768px) / 512); } }
+  @media screen and (min-width: 768px) and (min-width: 1280px) {
+    .c-special--bynum .c-grid__container.c-grid--three .c-grid__item:first-child .c-grid-card {
+      width: 600px; } }
+
+.c-editor-picks h2 {
+  font-family: "Aachen", "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+  padding: 0;
+  line-height: 1em;
+  text-align: center;
+  text-transform: uppercase; }
+  .c-editor-picks h2 {
+    font-size: 32px; }
+    @media screen and (min-width: 600px) {
+      .c-editor-picks h2 {
+        font-size: calc(32px + 32 * (100vw - 600px) / 680); } }
+    @media screen and (min-width: 1280px) {
+      .c-editor-picks h2 {
+        font-size: 64px; } }
+  .c-editor-picks h2 {
+    margin-top: 32px; }
+    @media screen and (min-width: 600px) {
+      .c-editor-picks h2 {
+        margin-top: calc(32px + 40 * (100vw - 600px) / 680); } }
+    @media screen and (min-width: 1280px) {
+      .c-editor-picks h2 {
+        margin-top: 72px; } }
+  .c-editor-picks h2 {
+    bottom: 24px; }
+    @media screen and (min-width: 600px) {
+      .c-editor-picks h2 {
+        bottom: calc(24px + 24 * (100vw - 600px) / 680); } }
+    @media screen and (min-width: 1280px) {
+      .c-editor-picks h2 {
+        bottom: 48px; } }
+.c-editor-picks ul {
+  list-style: none;
+  margin: 0 0 1em;
+  padding: 0; }
+  @media screen and (min-width: 600px) {
+    .c-editor-picks ul {
+      columns: 2 auto; } }
+  @media screen and (min-width: 960px) {
+    .c-editor-picks ul {
+      columns: 3 auto; } }
+  @media screen and (min-width: 1280px) {
+    .c-editor-picks ul {
+      columns: 4 auto; } }
+.c-editor-picks li {
+  display: inline-block;
+  padding: 0 1em;
+  margin: 0 0 1.5em;
+  line-height: 1.2em;
+  font-family: "Oswald", "Franklin Gothic Medium", Arial, sans-serif; }
+  @media screen and (min-width: 960px) {
+    .c-editor-picks li {
+      max-width: 300px; } }
+.c-editor-picks strong {
+  line-height: 1.1em;
+  font-family: "Aachen", "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+  text-transform: uppercase;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .c-editor-picks strong {
+    font-size: 18px; }
+    @media screen and (min-width: 600px) {
+      .c-editor-picks strong {
+        font-size: calc(18px + 2 * (100vw - 600px) / 680); } }
+    @media screen and (min-width: 1280px) {
+      .c-editor-picks strong {
+        font-size: 20px; } }
+
+footer {
+  padding: 32px 0;
+  background: #AAA;
+  color: #555;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald", "Franklin Gothic Medium", Arial, sans-serif;
+  line-height: 1.5em; }
+  footer a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease-out; }
+    footer a:hover {
+      color: #111; }
+  @media screen and (min-width: 768px) {
+    footer br {
+      display: none; } }
+
+.c-photography {
+  padding: 1.5em 0;
+  line-height: 1.5em;
+  background: #E55B8A;
+  color: #fff;
+  text-align: center;
+  font-family: "Oswald", "Franklin Gothic Medium", Arial, sans-serif;
+  text-transform: uppercase; }
+
+.c-photography__content svg {
+  display: block;
+  margin: 0 auto 0.5em; }
+@media screen and (min-width: 600px) {
+  .c-photography__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .c-photography__content svg {
+      display: inline-block;
+      margin: 0 0.5em 0 0; } }
+
+/*
+    ===========================
+    CDN Imports
+    ===========================
+*/
+
+/*# sourceMappingURL=style.css.map */

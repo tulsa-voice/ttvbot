@@ -1,0 +1,110 @@
+.c-hero {
+    margin-top: 50px;
+    background: url('../media/bg-hero-s.jpg') center center no-repeat fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mq-at-least(768px){
+        background-image: url('../media/bg-hero-m.jpg');
+    }
+    @include mq-at-least(1440px){
+        background-image: url('../media/bg-hero-l.jpg');
+    }
+}
+
+.c-hero__box {
+    @include fluid-type(width height, 400px, 800px, 350px, 700px);
+    background: url('../img/box.svg') center center no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    h1 {
+        display: inline-block;
+        color: $white;
+        text-transform: uppercase;
+        // outline: 1px solid gray;
+        @include fluid-type(font-size, 400px, 1200px, 48px, 96px);
+        @include fluid-type(margin-left, 400px, 1200px, -20px, -50px);
+    }
+}
+
+.c-intro {
+    background: $black;
+    color: $white;
+    padding: 3em 0;
+    h2 {
+        color: $orange;
+        text-transform: uppercase;
+        text-align: center;
+        @include fluid-type(font-size, 600px, 1280px, 42px, 80px);
+        font-family: $oswald;
+        line-height: 1em;
+        margin: 0 0 32px;
+        padding: 0;
+    }
+    hr {
+        margin: 0 0 48px;
+        padding: 0;
+        height: 5px;
+        background: $white;
+        border: none;
+    }
+    h3 {
+        @include fluid-type(font-size, 600px, 1280px, 32px, 64px);
+        font-family: $aachen;
+        margin: 0;
+        padding: 0;
+        line-height: 1em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    p {
+        font-family: $oswald;
+        font-size: 1.2em;
+        text-align: center;
+        display: block;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 0 2em;
+        text-transform: uppercase;
+        @include mq-at-least(768px){
+            padding-top: 1em;
+        }
+        a {
+            color: $orange;
+            text-decoration: none;
+            &:hover {
+                color: $blush;
+            }
+        }
+    }
+}
+
+.c-sponsor-title {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 5;
+    // margin: 0 auto 16px;
+    padding: 1em 1em 0.25em;
+    margin-bottom: 16px;
+    transition: all 0.2s ease-out;
+    &:hover {
+        background: $blush;
+    }
+    img {
+        display: inline-block;
+        height: 25px;
+        width: auto;
+        margin: 0 0.25em 8px;
+        @include mq-at-least(768px){
+            height: 35px;
+        }
+    }
+}

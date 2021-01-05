@@ -1,0 +1,18 @@
+// Fonts
+
+$oswald: 'Oswald', $franklin-gothic-font-stack;
+$aachen: 'Aachen', $book-antiqua-font-stack;
+
+
+// Font Face Includes
+@font-face {
+  font-family: 'Aachen';
+  src: url('fonts/unicode.aachenb.eot'); /* IE9 Compat Modes */
+  src: url('fonts/unicode.aachenb.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/unicode.aachenb.woff') format('woff'), /* Modern Browsers */
+       url('fonts/unicode.aachenb.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/unicode.aachenb.svg#dc6d2e017544373ab9e29b35c91a1d3a') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  700;
+}

@@ -1,0 +1,208 @@
+/* INTERVIEW styles
+==================================================================================================== */
+.interview {
+	.interview-grid {
+		@extend %grid;
+		@extend %grid--wide;
+		.interview-content-wrapper,
+		.interview-image-wrapper {
+			@extend %grid__item;
+			@extend %portable--one-half;
+		}
+	}
+	&.white {
+		background: $white;
+	}
+	background: $yellow;
+	padding: 2em;
+	.interview-image {
+		position: relative;
+		background: none;
+		transition: min-height 0.3s ease-out;
+		@include mq-at-least(960px) {
+			min-height: 650px;
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		@include mq-at-least(1200px) {
+			min-height: 600px;
+		}
+		@include mq-at-least(1400px) {
+			min-height: 550px;
+		}
+		&.interview-bartender {
+			@include mq-at-least(960px) {
+				.interview-image-caption {
+					h1, h2 {
+						color: $yellow;
+					}
+					i {
+						color: $pink;
+					}
+					background: none;
+				}
+				background-image: url('../media/interview-bartender-desktop.jpg');
+			}
+		}
+		&.interview-chef {
+			@include mq-at-least(960px) {
+				.interview-image-caption {
+					background: none;
+					h1, h2 {
+						color: $pink;
+					}
+					i {
+						color: $yellow;
+					}
+				}
+				background-image: url('../media/interview-chef-desktop.jpg');
+			}
+		}
+		&.interview-album {
+			@include mq-at-least(960px) {
+				.interview-image-caption {
+					background: none;
+					h1, h2 {
+						color: $pink;
+					}
+					i {
+						color: $yellow;
+					}
+				}
+				background-image: url('../media/interview-album-desktop.jpg');
+			}
+		}
+		&.interview-guthrie {
+			@include mq-at-least(960px) {
+				.interview-image-caption {
+					background: none;
+					h1, h2 {
+						color: $pink;
+					}
+					i {
+						color: $yellow;
+					}
+				}
+				background-image: url('../media/interview-guthrie-desktop.jpg');
+			}
+		}
+		&.interview-record {
+			@include mq-at-least(960px) {
+				.interview-image-caption {
+					background: none;
+					h1, h2 {
+						color: $pink;
+					}
+					i {
+						color: $yellow;
+					}
+				}
+				background-image: url('../media/interview-record-desktop.jpg');
+			}
+		}
+		.mobile {
+			display: block;
+			@include mq-at-least(960px) {
+				display: none;
+			}
+		}
+		.desktop {
+			display: none;
+			@include mq-at-least(960px) {
+				display: block;
+			}
+		}
+		.interview-image-caption {
+			transition: all 0.3s ease-out;
+			@include mq-at-least(960px) {
+				position: absolute;
+				max-width: calc(100% - 2em);
+				/*height: calc(100% - 2em);*/
+				@include rgba-bg($white, 0.5);
+				padding: 1em 0;
+				top: 1em;
+				right: 1em;
+				z-index: 2;
+			}
+			@include mq-at-least(1200px) {
+				width: 50%;
+			}
+			text-align: center;
+			padding-bottom: 1em;
+			h1 {
+				@include mq-at-least(960px) {
+					font-size: 3em;
+				}
+				font-family: $oswald;
+				text-transform: uppercase;
+				margin: 0;
+				padding: 0;
+			}
+			i {
+				display: block;
+				color: $pink;
+				font-size: 1.5em;
+				margin: 0;
+				padding: .5em 0;
+			}
+			h2 {
+				margin: 0;
+				padding: 0;
+				font-family: $droid;
+				small {
+					paddign: 1em 0;
+					display: block;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+	.interview-content {
+		padding: 1em 0 0;
+		h2 {
+			margin: 0;
+			padding: 0.5em;
+			background: $pink;
+			color: $white;
+			text-transform: uppercase;
+			font-family: $oswald;
+			margin: 0 0 0.5em;
+			strong {
+				color: $yellow;
+			}
+
+		}
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0 0 1em;
+			li {
+				padding: 0 0 1.5em;
+				font-family: $droid;
+				line-height: 1.5em;
+				span {
+					font-family: $oswald;
+					text-transform: uppercase;
+					color: $pink;
+					display: inline-block;
+				}
+			}
+		}
+		cite {
+			font-family: $oswald;
+			color: $pink;
+			display: inline-block;
+			text-transform: uppercase;
+		}
+		.interview-finalists {
+			text-align: center;
+			font-family: $oswald;
+			text-transform: uppercase;
+			font-size: 1.1em;
+			strong {
+				display: block;
+			}
+		}
+	}
+}

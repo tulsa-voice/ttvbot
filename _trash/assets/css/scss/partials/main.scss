@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.wrapper {
+    max-width: $maxWidth;
+    padding: 0 2em;
+    margin: 0 auto;
+    display: block;
+}
+
+a {
+    transition: color 0.2s ease-out;
+}
+
+h1 {
+    font-family: $oswald;
+}
+
+h2 {
+    font-family: $aachen;
+}
+
+// Utilites Classes
+.u-bg-pink {
+    background: $pink;
+}
+
+.u-bg-blush {
+    background: $blush;
+}
+
+.u-bg-orange {
+    background: $orange;
+}
+
+.u-bg-black {
+    background: $black;
+}
+
+.u-text-white {
+    color: $white;
+}
+
+.u-text-orange {
+    color: $orange;
+}
+
+.u-d-block {
+    display: block;
+}
+
+.u-oswald {
+    font-family: $oswald;
+}
+
+.u-align-center {
+    text-align: center;
+}

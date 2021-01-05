@@ -1,0 +1,171 @@
+/* LIST styles
+==================================================================================================== */
+.list {
+	background: $pink;
+	&.black {
+		background: $black;
+		ul {
+			li {
+				.spacer {
+					background: $pink;
+				}
+			}
+		}
+	}
+	@include mq-at-least(1200px){
+		margin-bottom: 3em;
+		/*margin-bottom: 3em;
+		padding-top: 100px;
+		position: relative;
+		&:after {
+			font-family: $fontello;
+			content: "\e807";
+			color: $yellow;
+			z-index: 3;
+			background: $black;
+			display: block;
+			height: 80px;
+			position: absolute;
+			width: 100%;
+			top: 0;
+			overflow: hidden;
+			text-align: center;
+			font-size: 4.5em;
+			line-height: 80px;
+		}*/
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		max-width: none;
+		/*@extend .small-centered;
+		@extend .row;*/
+		@extend %grid;
+		@extend %grid--center;
+		li {
+            .list-item {
+                max-width: 300px;
+                margin: 0 auto;
+				.spacer {
+					height: 3px;
+					margin: 0 0 5px;
+					background: $yellow;
+					@include mq-at-least(768px){
+						display: none;
+					}
+					&.spacer-top {
+						margin-top: 1em;
+					}
+					&.spacer-bottom {
+						margin-bottom: 1em;
+					}
+				}
+            }
+			&:first-child {
+				.list-item {
+                    margin-top: 1em;
+                    @include mq-at-least(768px){
+                        margin-top: 0;
+                    }
+                }
+			}
+			&:last-child {
+                .list-item {
+                    margin-bottom: 1em;
+                    @include mq-at-least(768px){
+                        margin-bottom: 0;
+                    }
+                }
+				h3 {
+					border-bottom: none;
+				}
+			}
+			@extend %grid__item;
+			/*@extend .columns;*/
+			text-align: center;
+			color: $white;
+			padding-top: 1em;
+			@include mq-at-least(768px){
+				padding-top: 2em;
+				padding-bottom: 2em;
+			}
+			h2 {
+				font-family: $oswald;
+				/*font-family: $archive;*/
+				font-size: 2em;
+				margin: 0;
+				padding: 0;
+				line-height: 1em;
+                text-transform: uppercase;
+				transition: font-size 0.2s ease-out;
+				@include mq-at-least(600px){
+					font-size: 2.5em;
+				}
+				@include mq-at-least(768px){
+					font-size: 3em;
+				}
+				span {
+					padding: 1em 0 0;
+					font-size: 0.5em;
+					display: block;
+					font-family: $droid;
+					line-height: 1em;
+				}
+			}
+			h3 {
+				border-top: 4px solid $white;
+				margin: .5em 0 0;
+				padding: 1em 0;
+				font-family: $oswald;
+
+				span {
+					color: $yellow;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+				}
+				@include mq-at-least(768px){
+					border-bottom: none;
+					border-top: 3px solid $white;
+					margin: .5em 0 0;
+					padding: 1em 0 0;
+				}
+				font-size: 1.2em;
+				line-height: 1.5em;
+			}
+		}
+	}
+	&.two-up {
+		li {
+			@extend %lap--one-half;
+			/*@extend .medium-6;*/
+		}
+	}
+	&.three-up {
+		li {
+			@extend %lap--one-third;
+			@extend %desk--one-third;
+
+		}
+	}
+	&.four-up {
+		li {
+			@extend %lap--one-half;
+			// @extend %portable--one-third;
+			@extend %desk--one-quarter;
+			/*@extend .medium-6;
+			@extend .large-3;*/
+			//
+		}
+	}
+	&.five-up {
+		li {
+			@extend %lap--one-half;
+			@extend %portable--two-thirds;
+			/*@extend .medium-6;
+			@extend .large-3;*/
+			//
+		}
+	}
+}
